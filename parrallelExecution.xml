@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="4" name="Docker" parallel="tests">
+
+	<test name="ff">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="DockerTest.ParrallelExecution" />
+		</classes>
+		
+	</test>
+
+	<test name="chrome">
+		<parameter name="browser" value="chrome" />
+		
+		<classes>
+			<class name="DockerTest.ParrallelExecution" />
+		</classes>
+		
+	</test>
+	
+</suite>

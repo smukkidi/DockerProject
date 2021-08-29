@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Docker]" parallel="tests">
+  <test thread-count="4" name="chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="DockerTest.ParrallelExecution">
+        <methods>
+          <include name="testSimpleTwo"/>
+          <include name="testSimpleFour"/>
+          <include name="setUp"/>
+          <include name="testSimple"/>
+          <include name="testSimpleThree"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- DockerTest.ParrallelExecution -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+  <test thread-count="4" name="ff(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="DockerTest.ParrallelExecution">
+        <methods>
+          <include name="testSimpleTwo"/>
+          <include name="testSimpleFour"/>
+          <include name="setUp"/>
+          <include name="testSimple"/>
+          <include name="testSimpleThree"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- DockerTest.ParrallelExecution -->
+    </classes>
+  </test> <!-- ff(failed) -->
+</suite> <!-- Failed suite [Docker] -->
