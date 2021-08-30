@@ -1,79 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Docker" duration-ms="39313" started-at="2021-08-12T15:30:43Z" finished-at="2021-08-12T15:31:22Z">
+  <suite name="Suite" duration-ms="18306" started-at="2021-08-30T05:57:55Z" finished-at="2021-08-30T05:58:13Z">
     <groups>
     </groups>
-    <test name="chrome" duration-ms="36074" started-at="2021-08-12T15:30:43Z" finished-at="2021-08-12T15:31:19Z">
-      <class name="DockerTest.ParrallelExecution">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:DockerTest.ParrallelExecution@31a5c39e]" name="setUp" is-config="true" duration-ms="2628" started-at="2021-08-12T15:30:43Z" finished-at="2021-08-12T15:30:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="ChromeTest" duration-ms="9103" started-at="2021-08-30T05:57:55Z" finished-at="2021-08-30T05:58:04Z">
+      <class name="DockerTest.ChromeTest">
+        <test-method status="PASS" signature="ChromeBrowserTest()[pri:0, instance:DockerTest.ChromeTest@5e3a8624]" name="ChromeBrowserTest" duration-ms="6920" started-at="2021-08-30T05:57:55Z" finished-at="2021-08-30T05:58:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSimple()[pri:0, instance:DockerTest.ParrallelExecution@31a5c39e]" name="testSimple" duration-ms="24264" started-at="2021-08-12T15:30:46Z" finished-at="2021-08-12T15:31:10Z">
+        </test-method> <!-- ChromeBrowserTest -->
+        <test-method status="PASS" signature="ChromeBrowserTestTwo()[pri:0, instance:DockerTest.ChromeTest@5e3a8624]" name="ChromeBrowserTestTwo" duration-ms="2145" started-at="2021-08-30T05:58:02Z" finished-at="2021-08-30T05:58:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSimple -->
-        <test-method status="PASS" signature="testSimpleFour()[pri:0, instance:DockerTest.ParrallelExecution@31a5c39e]" name="testSimpleFour" duration-ms="2611" started-at="2021-08-12T15:31:10Z" finished-at="2021-08-12T15:31:12Z">
+        </test-method> <!-- ChromeBrowserTestTwo -->
+      </class> <!-- DockerTest.ChromeTest -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="18306" started-at="2021-08-30T05:57:55Z" finished-at="2021-08-30T05:58:13Z">
+      <class name="DockerTest.SeleniumFirefox">
+        <test-method status="PASS" signature="FirefoxTest()[pri:0, instance:DockerTest.SeleniumFirefox@42dafa95]" name="FirefoxTest" duration-ms="12172" started-at="2021-08-30T05:57:55Z" finished-at="2021-08-30T05:58:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSimpleFour -->
-        <test-method status="PASS" signature="testSimpleThree()[pri:0, instance:DockerTest.ParrallelExecution@31a5c39e]" name="testSimpleThree" duration-ms="3938" started-at="2021-08-12T15:31:12Z" finished-at="2021-08-12T15:31:16Z">
+        </test-method> <!-- FirefoxTest -->
+        <test-method status="PASS" signature="FirefoxTestTwo()[pri:0, instance:DockerTest.SeleniumFirefox@42dafa95]" name="FirefoxTestTwo" duration-ms="6102" started-at="2021-08-30T05:58:07Z" finished-at="2021-08-30T05:58:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSimpleThree -->
-        <test-method status="PASS" signature="testSimpleTwo()[pri:0, instance:DockerTest.ParrallelExecution@31a5c39e]" name="testSimpleTwo" duration-ms="2511" started-at="2021-08-12T15:31:16Z" finished-at="2021-08-12T15:31:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSimpleTwo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DockerTest.ParrallelExecution@31a5c39e]" name="tearDown" is-config="true" duration-ms="80" started-at="2021-08-12T15:31:19Z" finished-at="2021-08-12T15:31:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- DockerTest.ParrallelExecution -->
-    </test> <!-- chrome -->
-    <test name="ff" duration-ms="39313" started-at="2021-08-12T15:30:43Z" finished-at="2021-08-12T15:31:22Z">
-      <class name="DockerTest.ParrallelExecution">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:DockerTest.ParrallelExecution@53b32d7]" name="setUp" is-config="true" duration-ms="18816" started-at="2021-08-12T15:30:43Z" finished-at="2021-08-12T15:31:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testSimple()[pri:0, instance:DockerTest.ParrallelExecution@53b32d7]" name="testSimple" duration-ms="9403" started-at="2021-08-12T15:31:02Z" finished-at="2021-08-12T15:31:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSimple -->
-        <test-method status="PASS" signature="testSimpleFour()[pri:0, instance:DockerTest.ParrallelExecution@53b32d7]" name="testSimpleFour" duration-ms="3175" started-at="2021-08-12T15:31:11Z" finished-at="2021-08-12T15:31:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSimpleFour -->
-        <test-method status="PASS" signature="testSimpleThree()[pri:0, instance:DockerTest.ParrallelExecution@53b32d7]" name="testSimpleThree" duration-ms="3951" started-at="2021-08-12T15:31:14Z" finished-at="2021-08-12T15:31:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSimpleThree -->
-        <test-method status="PASS" signature="testSimpleTwo()[pri:0, instance:DockerTest.ParrallelExecution@53b32d7]" name="testSimpleTwo" duration-ms="3179" started-at="2021-08-12T15:31:18Z" finished-at="2021-08-12T15:31:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSimpleTwo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:DockerTest.ParrallelExecution@53b32d7]" name="tearDown" is-config="true" duration-ms="773" started-at="2021-08-12T15:31:21Z" finished-at="2021-08-12T15:31:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- DockerTest.ParrallelExecution -->
-    </test> <!-- ff -->
-  </suite> <!-- Docker -->
+        </test-method> <!-- FirefoxTestTwo -->
+      </class> <!-- DockerTest.SeleniumFirefox -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>
