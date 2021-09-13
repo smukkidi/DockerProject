@@ -10,11 +10,6 @@ pool: Default
   #vmImage: ubuntu-latest
 
 steps:
-- task: Docker@1
-  displayName: 'Push container image'
-  inputs:
-    command: Push an image
-    imageName: 'selenium/hub'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
